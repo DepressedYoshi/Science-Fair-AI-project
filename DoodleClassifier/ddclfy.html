@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Joshua's Doodle Classifier</title>
+</head>
+
+<body>
+	<button  id="back" ><a href="..//index.html">back</a></button>
+	<div class="header">
+
+		<span id="title">	Doodle Classifier</span>
+	</div>
+<div class="canvas">
+	<div class="bton">
+		<button id="train">train</button>
+		<button id="test">test</button>
+		<button id="guess">guess</button>
+		<button id="clear">clear</button>
+	</div>
+	<div class="answer" id="answer">
+		<p>"this is a "</p>
+	</div>
+	<div class="data">
+		<div class="ac">
+			<p>Accuracy:0%</p>
+		</div>
+		<div class="epoch">
+			<p>0 round of training</p>
+		</div>
+	</div>
+	<div class="instrucstions">
+		<p>draw here, and then press "guess"</p>
+	</div>
+</div>
+
+<script src="libraries/p5.min.js"></script>
+<script src="libraries/p5.dom.min.js"></script>
+<script src="loadbinary.js"></script>
+<script src="traintest.js"></script>
+<script src="dataprep.js"></script>
+<script src="sketch.js"></script>
+<script src="libraries/nn.js"></script>
+<script src="libraries/matrix.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+
+</html>

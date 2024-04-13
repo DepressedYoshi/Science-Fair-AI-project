@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Joshua Li science fair - Procedures</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Made</strong> by Joshua Li</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="generic.html">Introduction</a>
+						<a href="variable.html">Variable</a>
+						<a href="procedure.html" id="currnt">Procedure</a>
+						<a href="result.html">Conclusion</a>
+						<a href="credit.html">Acknowledgements</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Procedures </h2>
+						<p>Joshua Li</p>
+					</header>
+
+          <style media="screen">
+            ol.a{
+              margin-left:3vw;
+              list-style-type: decimal;
+            }
+            ol.b{
+              margin-left:3vw;
+              margin-top:0.5em;
+              margin-bottom:0.5em;
+              list-style-type: lower-alpha;
+            }
+            img.a{
+              margin: 1em;
+            }
+
+          </style>
+
+          <h3>Step 1</h3>
+            <p>
+              Open the project folder in the Atom text editor. Remember to have the live-server package installed so that you can simulate the code’s performance in an actual website.
+            </p>
+            <img src="images/p1.png" alt="p1" class= "b">
+          <h3>Step 2</h3>
+            <p>
+              Download all the doodle image data from the <a href="https://quickdraw.withgoogle.com/data">google quickdraw data set</a>, and then use Processing to convert it into a binary file, so that I can use it in Javascript. I could just download the .bin directly but I want to examine exactly what image got into the dataset  so I did this extra steb.
+            </p>
+            <img src="images/p2.png" alt="hi, you found easter egg #1"class="a">
+          <h3>Step 3</h3>
+          <p style="margin-bottom: 1em;">
+            Code a neural network that classifies doodle input
+            <ol class="a">
+              <li>Preparing the data</li>
+              <ol class="b" start="a">
+                <li >
+                  Divide the data into training and testing, 80% of the data will be used for training the neural network and the 20% will be used to test the accuracy of the training.
+                </li>
+                <img src="images/p31.png" alt="p31" width="770px"class="a">
+                <li >
+                  Mix the three sets of data into an array of  random arrangements, so as to  make the experiment accurate.
+                </li>
+                <img src="images/p32.png" alt="hmm, I wonder what is on the last page"class="a">
+              </ol>
+              <li>Training the AI</li>
+              <ol class="b" start="a">
+                <li>
+                  Every image is broken down into 784 pixels, so the Neural network has 784 inputs.
+                </li>
+                <li>
+                  Every input is multiplied by some weight, then go through the activation function.
+                </li>
+                <li>
+                  Based on whether the AI got it right, adjust the weight, parameters AI used to classify data.
+                </li>
+                <li>
+                  Testing the data, after the training round is over, input the testing data set so that we know how much AI has improved
+                </li>
+                <img src="images/p4.png" class="a">
+              </ol>
+              <li>Create a canvas and a guess button, allow the person to draw an image and let the AI to classify.</li>
+            </ol>
+          </p>
+          <h3>Step 4</h3>
+          <p>Open file “Sketch.js”, set the size of data, the file those data reference to , and the rounds of training every time the ‘train’ button is clicked.
+          </p>
+          <img src="images/p44.png" class="b" >
+          <h3>Step 5</h3>
+          <p>Click on “Packages” -> “Live-server” -> “Start server”. A Chrome windows should pop up and wait for the pages to load.
+          </p>
+          <img src="images/p5.png" class="b" >
+          <h3>Step 6</h3>
+          <p>Click on ‘test’, and the accuracy before any training should appear on the page. Record that percentage as control.
+          </p>
+          <img src="images/p6.png" class="b" >
+          <h3>Step 7</h3>
+          <p>Click on the ‘train’ button, it will start training the neural network, recording the accuracy change in  each round of training.
+          </p>
+          <img src="images/p7.png" class="b" >
+          <h3>Step 8</h3>
+          <p>After 40 rounds of training, draw on the canvas in my own style 20 times, and see if the AI can guess correctly. This is to determine whether the AI can actually interpret the drawing or just follow a pattern that can be broken by human creativity
+          </p>
+          <img src="images/p8.jpg" class="b" >
+          <h3>Step 9</h3>
+          <p>Change the size of the dataset and repeat step 4.</p>
+
+
+				<!-- up load pic tures of code in between above-->
+				</div>
+				<footer style="text-align: center;">
+					<a href="variable.html" class="button" id="bk">Back</a>
+					<a href="result.html" class="button" id="nt">Next</a>
+				</footer>
+			</section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
